@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字体对比</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&family=Liu+Jian+Mao+Cao&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.0.0/style.css">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0f0c08; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 100vh;
+    }
+
+    .card {
+      padding: 64px 52px 52px;
+      border-right: 1px solid #1e1810;
+      border-bottom: 1px solid #1e1810;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 22px;
+      position: relative;
+      transition: background .3s;
+    }
+    .card:hover { background: rgba(196,168,130,.04); }
+
+    .badge {
+      position: absolute;
+      top: 24px; left: 52px;
+      font-size: 11px;
+      letter-spacing: .4em;
+      text-transform: uppercase;
+      color: rgba(196,168,130,.55);
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    .font-id {
+      font-size: 10px;
+      letter-spacing: .18em;
+      color: rgba(196,168,130,.4);
+      font-family: 'Helvetica Neue', sans-serif;
+      text-transform: uppercase;
+    }
+
+    .main-text {
+      font-size: clamp(3.8rem, 6vw, 5.5rem);
+      line-height: 1.25;
+      letter-spacing: .1em;
+      color: #F5F0E8;
+    }
+
+    .brand {
+      font-size: 2rem;
+      color: #C4A882;
+      letter-spacing: .22em;
+    }
+
+    .role {
+      font-size: .58rem;
+      letter-spacing: .38em;
+      text-transform: uppercase;
+      color: rgba(196,168,130,.32);
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    .f-a   .main-text, .f-a   .brand { font-family: 'Zhi Mang Xing', cursive; }
+    .f-b   .main-text, .f-b   .brand { font-family: 'Liu Jian Mao Cao', cursive; }
+    .f-c   .main-text, .f-c   .brand { font-family: 'LXGW WenKai Screen', 'LXGW WenKai', serif; }
+    .f-d   .main-text, .f-d   .brand { font-family: 'Ma Shan Zheng', cursive; }
+  </style>
+</head>
+<body>
+  <div class="grid">
+
+    <div class="card f-a">
+      <span class="badge">A</span>
+      <div class="font-id">Zhi Mang Xing · 只是行草</div>
+      <div class="main-text">每一帧<br>都是你</div>
+      <div class="brand">松子</div>
+      <div class="role">photographer · makeup artist</div>
+    </div>
+
+    <div class="card f-b">
+      <span class="badge">B</span>
+      <div class="font-id">Liu Jian Mao Cao · 刘建毛草</div>
+      <div class="main-text">每一帧<br>都是你</div>
+      <div class="brand">松子</div>
+      <div class="role">photographer · makeup artist</div>
+    </div>
+
+    <div class="card f-c">
+      <span class="badge">C · 新</span>
+      <div class="font-id">LXGW WenKai · 霞鹜文楷</div>
+      <div class="main-text">每一帧<br>都是你</div>
+      <div class="brand">松子</div>
+      <div class="role">photographer · makeup artist</div>
+    </div>
+
+    <div class="card f-d">
+      <span class="badge">D · 新</span>
+      <div class="font-id">Ma Shan Zheng · 马善政楷书</div>
+      <div class="main-text">每一帧<br>都是你</div>
+      <div class="brand">松子</div>
+      <div class="role">photographer · makeup artist</div>
+    </div>
+
+  </div>
+</body>
+</html>

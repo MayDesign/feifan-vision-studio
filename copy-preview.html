@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文案对比</title>
+  <link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Jost:wght@200;300&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0f0c08; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 100vh;
+    }
+
+    .card {
+      padding: 64px 52px 52px;
+      border-right: 1px solid #1e1810;
+      border-bottom: 1px solid #1e1810;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 28px;
+      position: relative;
+      transition: background .3s;
+    }
+    .card:hover { background: rgba(196,168,130,.04); }
+
+    .badge {
+      position: absolute;
+      top: 24px; left: 52px;
+      font-size: 10px;
+      letter-spacing: .42em;
+      text-transform: uppercase;
+      color: rgba(196,168,130,.5);
+      font-family: 'Jost', sans-serif;
+      font-weight: 200;
+    }
+
+    .main-text {
+      font-family: 'Liu Jian Mao Cao', cursive;
+      font-size: clamp(2.6rem, 5vw, 4.6rem);
+      line-height: 1.35;
+      letter-spacing: .1em;
+      color: #F5F0E8;
+    }
+
+    .sub {
+      font-family: 'Liu Jian Mao Cao', cursive;
+      font-size: 1.1rem;
+      color: rgba(196,168,130,.6);
+      letter-spacing: .18em;
+    }
+
+    .role {
+      font-family: 'Jost', sans-serif;
+      font-weight: 200;
+      font-size: .58rem;
+      letter-spacing: .4em;
+      text-transform: uppercase;
+      color: rgba(196,168,130,.28);
+    }
+
+    .divider {
+      width: 32px;
+      height: 1px;
+      background: rgba(196,168,130,.25);
+    }
+  </style>
+</head>
+<body>
+<div class="grid">
+
+  <div class="card">
+    <span class="badge">1 · 当前版本</span>
+    <div class="main-text">每一帧<br>都是你</div>
+    <div class="divider"></div>
+    <div class="sub">松子</div>
+    <div class="role">photographer · makeup artist</div>
+  </div>
+
+  <div class="card">
+    <span class="badge">2</span>
+    <div class="main-text">被光<br>偏爱的<br>都是你</div>
+    <div class="divider"></div>
+    <div class="sub">松子</div>
+    <div class="role">photographer · makeup artist</div>
+  </div>
+
+  <div class="card">
+    <span class="badge">3</span>
+    <div class="main-text">时光流走<br>你留下来</div>
+    <div class="divider"></div>
+    <div class="sub">松子</div>
+    <div class="role">photographer · makeup artist</div>
+  </div>
+
+  <div class="card">
+    <span class="badge">4</span>
+    <div class="main-text">那道光<br>为你转弯</div>
+    <div class="divider"></div>
+    <div class="sub">松子</div>
+    <div class="role">photographer · makeup artist</div>
+  </div>
+
+  <div class="card">
+    <span class="badge">5</span>
+    <div class="main-text">此刻<br>为你定格</div>
+    <div class="divider"></div>
+    <div class="sub">松子</div>
+    <div class="role">photographer · makeup artist</div>
+  </div>
+
+  <div class="card">
+    <span class="badge">6</span>
+    <div class="main-text">你的模样<br>值得被记住</div>
+    <div class="divider"></div>
+    <div class="sub">松子</div>
+    <div class="role">photographer · makeup artist</div>
+  </div>
+
+</div>
+</body>
+</html>
